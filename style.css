@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.detail {
+  display: flex;
+  width: 30vw;
+  align-items: center;
+  justify-content: space-around;
+}
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.head h1 {
+  padding-bottom: 10px;
+  color: #648ffb;
+}
+.head p {
+  margin: 0;
+}
+
+ul {
+  display: flex;
+  margin-top: 80px;
+}
+
+ul li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 60px;
+}
+
+ul li .text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #648ffb;
+}
+
+/* Progress Div Css  */
+
+ul li .progress {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(169, 169, 169, 0.781);
+  margin: 14px 0;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+}
+.progress::after {
+  content: " ";
+  position: absolute;
+  width: 156px;
+  height: 5px;
+  background-color: rgba(169, 169, 169, 0.781);
+  right: 30px;
+}
+.one::after {
+  width: 0;
+  height: 0;
+}
+
+ul li .active {
+  background-color: #648ffb;
+  display: grid;
+  place-items: center;
+}
+li .active::after {
+  background-color: #648ffb;
+}
